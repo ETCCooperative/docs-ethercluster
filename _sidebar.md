@@ -7,7 +7,7 @@
 
   - [Cloud Providers](cloud.md)
   - [Terraform](terraform.md)
-  - [Setting Up Cloud](setting-cloud.md)
+  - [Setting Up GKE](setting-gke.md)
 
 - Ethercluster 
 
