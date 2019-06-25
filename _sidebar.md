@@ -8,6 +8,7 @@
   - [Cloud Providers](cloud.md)
   - [Terraform](terraform.md)
   - [Setting Up GKE](setting-gke.md)
+  - [Google Cloud Shell](cloud-shell.md)
 
 - Ethercluster 
 
