@@ -14,9 +14,4 @@
 
   - [Kubernetes](kubernetes.md)
   - [Cluster Design](cluster-design.md)
-  - [Instantiating Cluster](cluster.md)
   - [SSL Configuration](ssl.md)
-
-- Further Enhancements
-- [Netstats](stats.md)
-- [High-Availability](high-availability.md)
