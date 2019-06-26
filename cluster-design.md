@@ -400,5 +400,40 @@ If your node is fully synced by then, it'll return
 
 This means your clear to use your new RPC endpoint!
 
+
+
+## Scaling Pods
+
+Now, say you need another parity pod running in case you're experiencing heavy load.
+
+You can easily scale up or down your cluster in Kubernetes with one command:
+```sh
+kubernetes scale statefulset classic -n ethercluster --replicas=4
+```
+
+This will create a new replica, increasing the replicas to 4. You can see it being created with the following command:
+```
+kubernetes get all -n ethercluster
+```
+
+This will output the following:
+```sh
+NAME                                     READY   STATUS    RESTARTS   AGE
+pod/classic-0                            2/2     Running   0          10m
+pod/classic-1                            2/2     Running   0          10m
+pod/classic-2                            2/2     Running   0          10m
+pod/classic-3                            2/2     Running   0          1m
+
+NAME                        TYPE           CLUSTER-IP      EXTERNAL-IP       PORT(S)                                       AGE
+service/classic             LoadBalancer   10.00.00.00     109.01.01.01      8080:30003/TCP,8545:30002/TCP,443:30001/TCP   10m
+
+NAME                       READY   AGE
+statefulset.apps/classic   3/3     10m
+```
+
+Notice you now have a `classic-3` pod being created and beginning to sync. You can do the same thing to scale it back to 3 by
+changing the previous command from 4 replicas to 3. Also, GKE does offer auto-scaling for you if needed, but that'll affect
+your billing if you don't monitor it consistently.
+
 In the next section, we will go over securing your endpoint with SSL when using it publicly. It's not really needed if you want 
 to use RPC only internally within your own infrastructure.
