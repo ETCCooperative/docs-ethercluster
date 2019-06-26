@@ -16,8 +16,6 @@
   - [Cluster Design](cluster-design.md)
   - [Instantiating Cluster](cluster.md)
   - [SSL Configuration](ssl.md)
-  - [Healthchecks](health.md)
-  - [Scaling Cluster](scaling.md)
 
 - Further Enhancements
 - [Netstats](stats.md)
