@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](_media/test-logo-2.png)
+![logo](_media/Ethercluster_PNG.png ':size=450x200')
 
 # ethercluster <small>1.0</small>
 
