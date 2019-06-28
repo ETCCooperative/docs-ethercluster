@@ -2,6 +2,8 @@
 
 **Design Specifications for Blockchain Infrastructure**
 
+Check out our live site to test a free public RPC built using this guide [here](https://www.ethercluster.com).
+
 ---
 
 ### Features
