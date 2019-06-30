@@ -4,16 +4,16 @@ To get started with building your Ethercluster, you'll need to have an account w
 
 A cloud provider basically is the place where you'll host your Ethercluster. Many companies provide
 computing power and services that allow you to set up instances in data centers globally where your application
-and other infrastructure live. Think of it as the foundation that stores your infrasturcture and application.
+and other infrastructure live. Think of it as the foundation that stores your infrastructure and application.
 
 The following cloud providers you can use are:
-* Google Cloud Platform (GCP)
-* Amazon Web Services (AWS)
-* Azure Cloud
-* Digital Ocean
+* ![Google Cloud Platform](https://cloud.google.com/) (GCP)
+* ![Amazon Web Services](https://aws.amazon.com/) (AWS)
+* ![Microsoft Azure Cloud](https://azure.microsoft.com/en-us/)
+* ![Digital Ocean](https://www.digitalocean.com/)
 
 **Note**:
-For this version of Ethercluster, we will only be using Google Cloud Service.
+For this version of Ethercluster, we will only be using Google Cloud Platform.
 In future versions of this guide, we want to build more High-Availability Ethercluster on multiple cloud servers.
 (Think having your nodes on all Amazon, Google and Microsoft servers globally in order to ensure very high upkeep time.)
 

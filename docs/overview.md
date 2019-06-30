@@ -14,7 +14,7 @@ cloud-providers and geographical locations.
 Ethercluster began as a project for Ethereum Classic community due to frustrations at not having
 a viable node infrastructure service that provides a reliable RPC endpoint.
 
-All the major node providers such as Infura don't support ETC yet, so Ethercluster came about
+All the major node providers such as Infura do not support ETC yet, so Ethercluster came about
 from a desire to have a service like Infura that can scale as demand requires.
 
 Since the ETC Cooperative is also a nonprofit, just providing this service to everyone would be costly

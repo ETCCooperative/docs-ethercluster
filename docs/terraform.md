@@ -3,7 +3,7 @@
 [Terraform]() is infra-as-code to allow you to provision your cloud infrastructure in a way that's 
 clear and easy to roll-back and version control.
 
-This allows any change you make to your cloud architecture to be reflected in code and saved, so
+This allows any changes you make to your cloud architecture to be reflected in code and saved, so
 that any new changes you add can be tracked and debugged.
 
 Here, we will go over installing Terraform and setting up a Google Kubernetes Engine cluster for it.
@@ -43,7 +43,7 @@ the Terraform [installation guide](https://learn.hashicorp.com/terraform/getting
 
 ## Initialization
 
-We will need to initialize Terrform in a directory to begin building our cluster.
+We will need to initialize Terraform in a directory to begin building our cluster.
 
 We will make a directory called `ethercloud` as the place where we will initialize our Terraform in.
 
@@ -60,4 +60,4 @@ The directory has no Terraform configuration files. You may begin working
 with Terraform immediately by creating Terraform configuration files.
 ```
 
-Great, now that Terraform is initialized, head over to next section to begin building with it.
+Great, now that Terraform is initialized, head over to the next section to begin building with it.
