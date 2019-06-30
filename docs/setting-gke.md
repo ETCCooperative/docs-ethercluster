@@ -1,10 +1,10 @@
 # Setting up Google Kubernetes Engine
 
-In this part, we will be using Terraform to instantiate a Google Kubernetes Engine (GKE)
+In this part, we will be using Terraform to instantiate a [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine/) (GKE)
 which will be used to build our cluster.
 
 GKE is a Google Cloud product that makes it much easier to manage your Kubernetes cluster
-and get a high-level overview of it view a dashboard and friendly UI.
+and get a high-level overview of it via a dashboard and friendly UI.
 
 Don't worry too much about Kubernetes and what it does, it'll be covered in further sections.
 
@@ -189,10 +189,12 @@ terraform apply
 
 Now, since you already have your project json file from Google Cloud for authing added to your PATH in previous sections,
 Terraform can use it to deploy your cloud architecture for you. It'll go through the same output you saw in plan but with
-an execution plan and then start creating your instances. It'll take a little time to creates, so go have a coffee break
+an execution plan and then start creating your instances. It'll take a little time to create, so go have a coffee break
 while you wait.
 
 The output will look something like the following.
+
+![terraform-gif](_media/terraform-apply.gif)
 
 ```sh
 An execution plan has been generated and is shown below.

@@ -1,6 +1,6 @@
 # Kubernetes
 
-Kubernetes is an open-software orchestrasization, scaling and container deployment tool which we will use
+Kubernetes is an open-software orchestration, scaling and container deployment tool which we will use
 to deploy our ethercluster.
 
 Docker containers are unit of software that packages up code and all its dependencies so the application runs quickly and reliably on any computer. 
@@ -14,14 +14,14 @@ with references to external source materials in order to learn more.
 
 ## Quick Overview
 
-We know already that containerization (like Docker) helps us package softwares to allow for deploying new versions of the applications
+We know already that containerization (like Docker) helps us package software to allow for deploying new versions of the applications
 24/7.
 
 **Note**: If you're not familiar with Docker, there's a great tutorial [here](https://docker-curriculum.com/). We will 
 quickly brush over Docker later when going over a container we will be using in Kubernetes.
 
-What Kubernetes enables us to do is making sure those containerized applications we are deploying are running where and when we 
-want them to and give them tools they need to work easily.
+What Kubernetes enables us to do is make sure those containerized applications we are deploying are running where and when we 
+want them to and give them the tools they need to work easily.
 
 Essentially, the idea is to first create a cluster (images shown below taken from Kubernetes tutorial above for demonstration).
 ![cluster-img](_media/cluster_img.png)
@@ -39,7 +39,7 @@ We can also scale our containerized app on Kubernetes by having more of it runni
 
 ## Kubernetes Cluster
 
-Kubernetes both creats a highly-available cluster of computers connected together and automates distribution of containerized 
+Kubernetes both creates a highly-available cluster of computers connected together and automates distribution of containerized 
 applications in an efficient way.
 
 From a high level, a Kubernetes cluster consists of two things:

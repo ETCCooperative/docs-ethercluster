@@ -19,5 +19,5 @@ Go checkout the `Getting Started` to begin building your node infrastructure.
 
 
 
-Ethercluster is an initiative provided by the ![Ethereum Classic Cooperative](https://etccooperative.org/).
+Ethercluster is an initiative provided by the [Ethereum Classic Cooperative](https://etccooperative.org/).
 ![logo](_media/ecc-logo.jpg)

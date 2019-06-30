@@ -7,10 +7,10 @@ computing power and services that allow you to set up instances in data centers 
 and other infrastructure live. Think of it as the foundation that stores your infrastructure and application.
 
 The following cloud providers you can use are:
-* ![Google Cloud Platform](https://cloud.google.com/) (GCP)
-* ![Amazon Web Services](https://aws.amazon.com/) (AWS)
-* ![Microsoft Azure Cloud](https://azure.microsoft.com/en-us/)
-* ![Digital Ocean](https://www.digitalocean.com/)
+* [Google Cloud Platform](https://cloud.google.com/) (GCP)
+* [Amazon Web Services](https://aws.amazon.com/) (AWS)
+* [Microsoft Azure Cloud](https://azure.microsoft.com/en-us/)
+* [Digital Ocean](https://www.digitalocean.com/)
 
 **Note**:
 For this version of Ethercluster, we will only be using Google Cloud Platform.

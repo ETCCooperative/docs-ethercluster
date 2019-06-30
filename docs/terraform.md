@@ -1,6 +1,6 @@
 # Terraform
 
-[Terraform]() is infra-as-code to allow you to provision your cloud infrastructure in a way that's 
+[Terraform](https://www.terraform.io) is infra-as-code to allow you to provision your cloud infrastructure in a way that's 
 clear and easy to roll-back and version control.
 
 This allows any changes you make to your cloud architecture to be reflected in code and saved, so

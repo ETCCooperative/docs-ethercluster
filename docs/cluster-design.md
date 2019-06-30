@@ -6,7 +6,7 @@ We will also need to think about how to organize the project in the cluster.
 
 ## Namespace
 
-We first need to define a namespace for our ethercluster. Namespaces in Kubernetes allow us to assign the a name for specific projects
+We first need to define a namespace for our ethercluster. Namespaces in Kubernetes allow us to assign a name for specific projects
 we are working on inside Kubernetes. It's useful if you want to organize your cluster between `dev` and `prod` namespaces for example.
 
 Here, we will just be using it for `ethercluster` to make it easier to see everything.
@@ -113,7 +113,7 @@ in Terraform, which is where our GKE cluster was created.
 
 Let's create the StorageClass via `kubectl apply -f classic-storage-class.yml`
 
-This will create the StorageClass in Google Cloud which we will use after when doing a Deployment.
+This will create the StorageClass in Google Cloud which we will use when doing a Deployment later.
 
 
 ## Service
@@ -245,7 +245,7 @@ default network to run. This is how Kubernetes can specify the arguments for the
 
 We also specify we want the ports 8545 since we want to expose the RPC. We have some readinessProbe and livenessProbe in order to do 
 health checks on the Probe. It happens by doing an HTTP GET request on port 8545 of the container on the endpoint `/api/health`, which
-checks if the Parity node is fully synced or not. If it's not synced up yet, it returns back a 503, otherwise it will return a 200, thus
+checks if the Parity node is fully synced or not. If it's not synced up yet, it returns a 503, otherwise it will return a 200, thus
 passing the health check.
 
 We also specify a `volumeClaimTemplates` for this Deployment of 50 GB, which is what will be needed to run a full ETC node. 
@@ -278,7 +278,7 @@ statefulset.apps/classic   3/3     1m
 ```
 
 Note that the age shown above might not be exact to what you get since it's still creating each Pod 1 by 1. Why do we have
-three pods? It's because we specifed our replica to be 3 in our deployment file.
+three pods? It's because we specified our replica to be 3 in our deployment file.
 
 Each pod is created by the Statefulset, where it's mounted to a volume from `classic-ssd` that we instantiated before, and then
 each image of the containers are pulled and instantiated, and begin running, before the next pod is created.
@@ -430,6 +430,8 @@ service/classic             LoadBalancer   10.00.00.00     109.01.01.01      808
 NAME                       READY   AGE
 statefulset.apps/classic   3/3     10m
 ```
+
+![kubernetes-scale](_media/kubernetes-scale.gif)
 
 Notice you now have a `classic-3` pod being created and beginning to sync. You can do the same thing to scale it back to 3 by
 changing the previous command from 4 replicas to 3. Also, GKE does offer auto-scaling for you if needed, but that'll affect
